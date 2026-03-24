@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Trade Calculator - Blox Fruits Values</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <h1>Trade Calculator</h1>
+            <p>Calculate trade values, compare demand, and ensure fair deals.</p>
+        </header>
+
+        <!-- Main Trade UI -->
+        <div class="trade-container">
+            <!-- Left Side: You -->
+            <div class="trade-side" id="you-side">
+                <div class="side-header">You</div>
+                <div class="fruit-selector">
+                    <select id="you-fruit" class="fruit-dropdown"></select>
+                </div>
+                <div class="stats">
+                    <div class="stat">Value: <span id="you-value">0</span></div>
+                    <div class="stat">Price: <span id="you-price">0</span></div>
+                    <div class="stat">Demand: <span id="you-demand">0</span>/10</div>
+                </div>
+            </div>
+
+            <!-- VS Badge -->
+            <div class="vs-badge" id="trade-status">Neutral</div>
+
+            <!-- Right Side: Them -->
+            <div class="trade-side" id="them-side">
+                <div class="side-header">Them</div>
+                <div class="fruit-selector">
+                    <select id="them-fruit" class="fruit-dropdown"></select>
+                </div>
+                <div class="stats">
+                    <div class="stat">Value: <span id="them-value">0</span></div>
+                    <div class="stat">Price: <span id="them-price">0</span></div>
+                    <div class="stat">Demand: <span id="them-demand">0</span>/10</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Comparison -->
+        <div class="comparison">
+            <div class="offer-card">
+                <h3>Your Offer</h3>
+                <div class="offer-stats">
+                    <span class="offer-value" id="your-offer-value">0</span>
+                    <span class="offer-detail">Demand: <span id="your-offer-demand">0</span>/10</span>
+                    <span class="offer-detail">Price: <span id="your-offer-price">0</span></span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <h3>Their Offer</h3>
+                <div class="offer-stats">
+                    <span class="offer-value" id="their-offer-value">0</span>
+                    <span class="offer-detail">Demand: <span id="their-offer-demand">0</span>/10</span>
+                    <span class="offer-detail">Price: <span id="their-offer-price">0</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="reset-btn" class="btn btn-secondary">Reset</button>
+            <button id="swap-btn" class="btn btn-primary">Swap Sides</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Cosmic Values. All rights reserved.</p>
+            <p class="disclaimer">All trademarks are property of their respective owners.<br>
+            bloxfruitsvalues.com is a 3rd party website that is not affiliated or partnered with Blox Fruits. We are not endorsed by their respective owners.</p>
+            <p><a href="#" style="color: #aaa;">Cosmic Values</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
